@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="soup.js"></script>
+    </head>
+    <body onload="startGame()">
+        <br>
+        <p>Add ingredients</p>
+        <button onclick="addIngredient('water')">water</button>
+        <button onclick="addIngredient('corn')">corn</button>
+        <button onclick="addIngredient('potato')">potato</button>
+        <button onclick="addIngredient('bean')">bean</button>
+        <button onclick="addIngredient('carrot')">carrot</button>
+        <p>Actions</p>
+        <button onclick="stir()">stir</button>
+        <button onclick="turnHeatUp()">turn heat up</button>
+        <button onclick="turnHeatDown()">turn heat down</button>
+        <button onclick="endGame()">done</button>
+        <p>Keep your ingredients from turning black!</p>
+    </body>
+</html>
