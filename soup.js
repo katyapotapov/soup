@@ -4,6 +4,26 @@ var myScore;
 var heat;
 var waterTemp;
 
+window.addEventListener("keydown", function(e) {
+    if(e.key == "a") {
+        turnHeatDown();
+    } else if(e.key == "d") {
+        turnHeatUp();
+    } else if(e.key == "s") {
+        endGame();
+    } else if(e.key == "w") {
+        addIngredient("water");
+    } else if(e.key == "p") {
+        addIngredient("potato");
+    } else if(e.key == "c") {
+        addIngredient("corn");
+    } else if(e.key == "C") {
+        addIngredient("carrot");
+    } else if(e.key == "b") {
+        addIngredient("bean");
+    }
+});
+
 function startGame() {
     myGamePiece = new component(70, 70, 'red', 205, 100, 'bowl');
     myGamePiece.ingredients = [];
